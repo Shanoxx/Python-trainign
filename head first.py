@@ -1,24 +1,26 @@
+'''create new list'''
 movies=["The Holy Grail", "Thr Life of brian", "The Meaning of Life"]
 movies.insert(1, 1975)
 movies.insert(3, 1979)
 movies.insert(6, 1983)
 print(movies)
 
+'''the same using for loop'''
 for game_changer in movies:
     print(game_changer)
-
+'''while loop'''
 count=0
 while count <len(movies):
     print(movies[count])
     count=count +1
-
+'''nested list checked by isinstance'''
 names=['Lukasz', 'Magdalena', ['John', 'Noemi', ['Beatrix', 'Whitney', [1,2,3]]]]
 isinstance(names, list)
 licz_names=len(names)
 isinstance(licz_names, list)
 
 print(names[1])
-
+'''print all nested lists'''
 for each_item in names:
     if isinstance(each_item, list):
         for nested_item in each_item:
@@ -34,7 +36,7 @@ for each_item in names:
     else:
         print(each_item)
 the_list=[4,5,6]
-
+'''first function, do the same like upper'''
 def print_lol(the_list):
     for new in the_list:
         if isinstance(new, list):
