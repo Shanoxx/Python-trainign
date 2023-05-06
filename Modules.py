@@ -16,7 +16,7 @@
         print(x)'''
 
 def lista_funkcja(lista):
-'''function below is doing exactly the same as a code above'''
+#function below is doing exactly the same as a code above
     for each_item in lista:
         if isinstance(each_item, list):
             lista_funkcja(each_item)
